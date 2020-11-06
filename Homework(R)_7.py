@@ -4,10 +4,10 @@
 #     day = 0
 #     for elem in query_counts:
 #         day += 1
+#         b = balance
 #         if elem > k:
 #             balance += elem-k
 #         elif elem < k:
-#             b = balance
 #             if balance > 0:
 #                 balance -= k-elem
 #         if balance <= 0 and b+elem != k:
@@ -18,7 +18,7 @@
 #     return day
 #
 #
-# print(answer_queries(5, 10, 5, 5, 3, 2, 1))
+# print(answer_queries(1, 100))
 
 #2
 def non_decreasing_sequence(*nums):
