@@ -16,9 +16,14 @@
 
 #2
 
-# def largest_composition(integers_list):
-#     integers_list.sort()
-#     return integers_list[-3]*integers_list[-2]*integers_list[-1]
-#
-#
-# print(largest_composition([9,5,8,5,20,1,2,-3,-2,-1,0]))
+def largest_composition(integers_list):
+    integers_list.sort()
+    a = integers_list[0] * integers_list[1] * integers_list[-1]
+    b = integers_list[-3] * integers_list[-2] * integers_list[-1]
+    if a > b:
+        return a
+    else:
+        return b
+
+
+print(largest_composition([9,5,8,5,20,1,2,-3,-2,-1,0]))
