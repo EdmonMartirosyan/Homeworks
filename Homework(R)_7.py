@@ -42,4 +42,8 @@ def non_decreasing_sequence(*nums):
         print("No")
 
 
+<<<<<<< HEAD
 non_decreasing_sequence(7,3,-5,-7,7,7,9)
+=======
+non_decreasing_sequence()
+>>>>>>> 39fd259e202b182387c435c9c2e4b58d13f1d0e8
