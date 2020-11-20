@@ -61,8 +61,12 @@ def digitsProduct(product):
         return 10
 
 
+<<<<<<< HEAD
 print(digitsProduct(450))
 
+=======
+print(digitsProduct())
+>>>>>>> 80dec8886b3694af3ff56aaace87d4f02bdc5a92
 
 
 
