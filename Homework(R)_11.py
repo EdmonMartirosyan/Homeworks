@@ -29,6 +29,8 @@
 def digitsProduct(product):
     n = 2
     factors = []
+    if product == 1:
+        return 1
     while product//n > 0:
         if product % n == 0:
             factors.append(n)
@@ -54,12 +56,12 @@ def digitsProduct(product):
         new_factors.sort()
         for elem in new_factors:
             factors_string += str(elem)
-        return factors_string
+        return int(factors_string)
     else:
         return 10
 
 
-print(digitsProduct(243))
+print(digitsProduct(450))
 
 
 
