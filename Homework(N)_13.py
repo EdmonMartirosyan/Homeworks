@@ -19,8 +19,6 @@
 #            [27, 29, 37, 48],
 #            [32, 33, 39, 50]]
 
-# variant 1
-
 # def search(matrix, number):
 #     for i in range(len(matrix)):
 #         left = 0
@@ -33,17 +31,6 @@
 #                 left = middle+1
 #             else:
 #                 return i, middle
-#
-#
-# print(search(matrix, 29))
-
-# variant 2
-
-
-# def search(matrix, number):
-#     for i in range(len(matrix)):
-#         if number in matrix[i]:
-#             return i, matrix[i].index(number)
 #
 #
 # print(search(matrix, 29))
