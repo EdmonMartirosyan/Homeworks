@@ -1,12 +1,7 @@
 # 1
 
 def func(str1, str2):
-    if len(str1) != len(str2):
-        return False
-    for i in range(len(str2)):
-        if str2.count(str2[i]) != str1.count(str2[i]):
-            return False
-    return True
+    return sorted(list(str1)) == sorted(list(str2))
 
 
 print(func("abvdj", "vjdab"))
