@@ -1,15 +1,15 @@
 # 1
 
-# def func(string_1, string_2):
-#     if len(string_1) != len(string_2):
-#         return False
-#     for i in range(len(string_1)):
-#         if string_1[i] not in string_2:
-#             return False
-#     return True
-#
-#
-# print(func("abvdj", "vjdab"))
+def func(str1, str2):
+    if len(str1) != len(str2):
+        return False
+    for i in range(len(str2)):
+        if str2.count(str2[i]) != str1.count(str2[i]):
+            return False
+    return True
+
+
+print(func("abvdj", "vjdab"))
 
 
 # 2
