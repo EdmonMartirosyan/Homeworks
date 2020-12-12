@@ -41,6 +41,7 @@ class TicTacToe:
         for i in range(len(self.board)):
             for j in range(len(self.board)):
                 self.board[i].append("-")
+        self.count = 0
     def get_field(self):
         print(self.board)
     def check_field(self):
@@ -76,17 +77,15 @@ class TicTacToe:
             if "-" in self.board[i]:
                 return None
         return "D"
-    count = 0
     def make_move(self, row, col):
-        global count
         if self.board[row-1][col-1] == "x" or self.board[row-1][col-1] == "o":
             print(f"Cell {row}, {col} is already filled")
-        if TicTacToe.count < 9 and TicTacToe.count % 2 == 0:
+        if self.count < 9 and self.count % 2 == 0:
             self.board[row-1][col-1] = "x"
-            TicTacToe.count += 1
-        elif TicTacToe.count < 9 and TicTacToe.count % 2 == 1:
+            self.count += 1
+        elif self.count < 9 and self.count % 2 == 1:
             self.board[row-1][col-1] = "o"
-            TicTacToe.count += 1
+            self.count += 1
         if self.check_field() == "x":
             print("X-player won!", "Game over", sep="\n")
         elif self.check_field() == "0":
