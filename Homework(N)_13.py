@@ -1,15 +1,10 @@
 # 1
 
-# def func(string_1, string_2):
-#     if len(string_1) != len(string_2):
-#         return False
-#     for i in range(len(string_1)):
-#         if string_1[i] not in string_2:
-#             return False
-#     return True
-#
-#
-# print(func("abvdj", "vjdab"))
+def func(str1, str2):
+    return sorted(list(str1)) == sorted(list(str2))
+
+
+print(func("abvdj", "vjdab"))
 
 
 # 2
@@ -18,8 +13,6 @@
 #            [15, 25, 35, 45],
 #            [27, 29, 37, 48],
 #            [32, 33, 39, 50]]
-
-# variant 1
 
 # def search(matrix, number):
 #     for i in range(len(matrix)):
@@ -33,17 +26,6 @@
 #                 left = middle+1
 #             else:
 #                 return i, middle
-#
-#
-# print(search(matrix, 29))
-
-# variant 2
-
-
-# def search(matrix, number):
-#     for i in range(len(matrix)):
-#         if number in matrix[i]:
-#             return i, matrix[i].index(number)
 #
 #
 # print(search(matrix, 29))
